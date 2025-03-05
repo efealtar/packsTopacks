@@ -1,0 +1,16 @@
+services:
+  packserver:
+    build:
+      context: ./packserver
+    ports:
+      - "5000:5000"
+    container_name: packserver
+    restart: unless-stopped
+
+  react_app:
+    build:
+      context: ./client
+    ports:
+      - "3000:80"
+    container_name: react_app
+    restart: unless-stopped
