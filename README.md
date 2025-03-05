@@ -1,5 +1,10 @@
 ## Getting Started
 
+### Live Demo URL:
+   ```bash
+   http://gymshark-demo.s3-website.eu-west-2.amazonaws.com/
+   ```
+
 ### Prerequisites
 
 - Go 1.x
@@ -30,17 +35,17 @@
 
 ### To Clear Docker Packages
 
-    ```bash
+   ```bash
     docker compose down
-    ```
+   ```
 
 ### To Test Application with default values
 
 Note: Application will automatically test before every successful build
 
-    ```bash
+   ```bash
     go test -v ./packserver/...
-    ```
+   ```
 
 # Pack Size Calculator API
 
